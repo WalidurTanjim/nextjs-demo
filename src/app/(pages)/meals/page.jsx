@@ -2,10 +2,12 @@ import MealCard from "@/app/(components)/MealCard/MealCard";
 import MealSearchField from "@/app/(components)/MealSearchField/MealSearchField";
 import axios from "axios";
 
-const MealsPage = async() => {
+const MealsPage = async({ searchParams }) => {
+    const search = await searchParams;
+
     const fetchMeals = async() => {
         try{
-            const res = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=`);
+            const res = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search.search}`);
             const data = await res.data.meals || [];
             return data;
         }catch(err) {
