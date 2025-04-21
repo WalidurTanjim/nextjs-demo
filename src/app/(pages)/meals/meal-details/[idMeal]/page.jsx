@@ -1,20 +1,32 @@
 import axios from "axios";
 
+const fetchMeal = async (idMeal) => {
+    try {
+        const res = await axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`);
+        const data = await res.data.meals[0] || {};
+        return data;
+    } catch (err) {
+        console.error(err);
+        return {};
+    }
+}
+
+export async function generateMetadata({ params }) {
+    // read route params
+    const { idMeal } = await params;
+
+    const meal = await fetchMeal(idMeal);
+    const { strMeal } = meal;
+
+    return {
+        title: strMeal
+    }
+}
+
 const SignleMealDetailsPage = async ({ params }) => {
     const { idMeal } = await params;
 
-    const fetchMeal = async() => {
-        try{
-            const res = await axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`);
-            const data = await res.data.meals[0] || {};
-            return data;
-        }catch(err){
-            console.error(err);
-            return {};
-        }
-    }
-
-    const meal = await fetchMeal();
+    const meal = await fetchMeal(idMeal);
     const { strMeal, strMealThumb, strInstructions } = meal;
 
     return (
