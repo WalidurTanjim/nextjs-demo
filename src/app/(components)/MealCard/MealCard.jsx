@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const MealCard = ({ meal }) => {
@@ -5,7 +6,7 @@ const MealCard = ({ meal }) => {
 
     return (
         <div className={`meal meal-card p-2 border border-gray-300 rounded-lg`}>
-            <img src={strMealThumb} alt="Meal Image" className={`w-full h-[120px] rounded-md border border-gray-200`} />
+            <Image src={strMealThumb} alt="Meal Image" width={100} height={100} className={`w-full h-[120px] rounded-md border border-gray-200`} />
 
             <div className={`mt-2`}>
                 <h1 className={`text-lg font-semibold text-slate-700`}>{strMeal}</h1>
