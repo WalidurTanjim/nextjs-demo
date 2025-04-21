@@ -2,6 +2,11 @@ import MealCard from "@/app/(components)/MealCard/MealCard";
 import MealSearchField from "@/app/(components)/MealSearchField/MealSearchField";
 import axios from "axios";
 
+export const metadata = {
+    title: "All Meals | NextJS Demo",
+    description: "Loading MealDB api using Server Component"
+}
+
 const MealsPage = async({ searchParams }) => {
     const search = await searchParams;
 

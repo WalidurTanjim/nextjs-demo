@@ -6,7 +6,7 @@ const SignleMealDetailsPage = async ({ params }) => {
     const fetchMeal = async() => {
         try{
             const res = await axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`);
-            const data = await res.data.meals[0];
+            const data = await res.data.meals[0] || {};
             return data;
         }catch(err){
             console.error(err);
