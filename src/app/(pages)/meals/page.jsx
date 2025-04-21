@@ -3,7 +3,7 @@ import MealSearchField from "@/app/(components)/MealSearchField/MealSearchField"
 import axios from "axios";
 
 export const metadata = {
-    title: "All Meals | NextJS Demo",
+    title: "All Meals",
     description: "Loading MealDB api using Server Component"
 }
 
