@@ -4,6 +4,16 @@ import img_01 from "../../../../public/images/doraemon.jpg"
 import img_02 from "../../../../public/images/doraemon_2.jpg"
 import "@/app/globals.css"
 
+export const metadata = {
+    title: "Blogs page",
+    description: "This is a Blogs page of NextJS Demo web application. It will show all blogs in here.",
+    authors: [
+        {name: "Walidur Tanjim"},
+        {name: "MD WALIDUR RAHMAN TANJIM", url: "https://www.honeygain.com"}
+    ],
+    keywords: ['nextjs', 'reactjs', 'mongodb', 'mern stack', 'mernstack', 'full stack', 'fullstack']
+}
+
 const Blogs = () => {
     return (
         <div className="font-roboto">

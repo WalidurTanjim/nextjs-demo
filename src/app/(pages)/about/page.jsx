@@ -1,3 +1,15 @@
+import "@/app/globals.css"
+
+export const metadata = {
+    title: "About page",
+    description: "This is a About page of NextJS Demo web application. It will show all info in here.",
+    authors: [
+        {name: "Walidur Tanjim"},
+        {name: "MD WALIDUR RAHMAN TANJIM", url: "https://www.honeygain.com"}
+    ],
+    keywords: ['nextjs', 'reactjs', 'mongodb', 'mern stack', 'mernstack', 'full stack', 'fullstack']
+}
+
 const About = () => {
     return (
         <div>
