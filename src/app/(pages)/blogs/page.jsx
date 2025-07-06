@@ -2,16 +2,19 @@ import style from "@/app/(pages)/blogs/blogs.module.css"
 import Image from "next/image";
 import img_01 from "../../../../public/images/doraemon.jpg"
 import img_02 from "../../../../public/images/doraemon_2.jpg"
+import "@/app/globals.css"
 
 const Blogs = () => {
     return (
-        <div>
+        <div className="font-roboto">
             <div className="container mx-auto w-full px-2 sm:px-6 lg:px-8 py-10">
-                <h1 className={`${style.common_heading}`}>Hello, Blogs page</h1>
+                <h1 className={`${style.common_heading} font-roboto`}>Hello, Blogs page</h1>
 
                 <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-10">
                     <div className="border rounded-md p-3 text-center">
-                        <h1>Walidur Tanjim</h1>
+                        <h1 className="font-work-sans">Walidur Tanjim</h1>
+                        <p>MERN Stack Developer</p>
+                        <p>Uttara University</p>
                     </div>
 
                     <div className="border rounded-md p-3 text-center relative h-[250px]">

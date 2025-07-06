@@ -1,11 +1,8 @@
 import "@/app/globals.css";
 import Navbar from "@/shared/Navbar/Navbar";
-import Footer from "@/shared/Footer/Footer";
-
-export default function RootLayout({ children }) {
+import Footer from "@/shared/Footer/Footer";export default function PagesLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
+    <>
         <Navbar />
 
         <main>
@@ -13,7 +10,6 @@ export default function RootLayout({ children }) {
         </main>
 
         <Footer />
-      </body>
-    </html>
+    </>
   )
 }
