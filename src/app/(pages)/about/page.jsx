@@ -1,4 +1,5 @@
 import "@/app/globals.css"
+import SearchBox from "@/components/SearchBox/SearchBox";
 
 export const metadata = {
     title: "About page",
@@ -10,11 +11,13 @@ export const metadata = {
     keywords: ['nextjs', 'reactjs', 'mongodb', 'mern stack', 'mernstack', 'full stack', 'fullstack']
 }
 
-const About = () => {
+const About = (props) => {
+    const { search } = props?.searchParams;
+
     return (
         <div>
             <div className="container mx-auto w-full px-2 sm:px-6 lg:px-8 py-10">
-                <h1>Hello, About page</h1>
+                <SearchBox />
             </div>
         </div>
     );
