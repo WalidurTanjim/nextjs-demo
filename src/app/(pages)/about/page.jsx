@@ -11,8 +11,8 @@ export const metadata = {
     keywords: ['nextjs', 'reactjs', 'mongodb', 'mern stack', 'mernstack', 'full stack', 'fullstack']
 }
 
-const About = (props) => {
-    const { search } = props?.searchParams;
+const About = async(props) => {
+    const { search } = await props?.searchParams;
 
     return (
         <div>
