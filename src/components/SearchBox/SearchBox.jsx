@@ -18,8 +18,8 @@ const SearchBox = () => {
     }
 
     return (
-        <div onSubmit={handleSearch} className="w-full flex items-center justify-center mb-10">
-            <form className="flex w-full">
+        <div className="w-full flex items-center justify-center mb-10">
+            <form className="flex w-full" onSubmit={handleSearch}>
                 <input type="text" id="search_box" name="search_box" placeholder="Search here" autoComplete="off" required value={search} onChange={e => setSearch(e.target.value)} className="outline-none border border-blue-200 rounded-l-md px-5 py-1.5 w-full focus:border-blue-400" />
                 <button className="px-5 py-1.5 outline-none border border-blue-200 rounded-r-md bg-blue-500 hover:bg-blue-400 active:bg-blue-500 text-white">Search</button>
             </form>

@@ -13,7 +13,7 @@ const ServerComp = async(props) => {
     if(search){
         comments = comments.filter(comment => comment.email.toLowerCase().includes(search))
     }
-    // console.log(comments)
+    console.log(await props.searchParams)
 
     return (
         <div>
