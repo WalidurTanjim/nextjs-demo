@@ -1,6 +1,11 @@
 import MealsSearchBox from "@/components/MealsSearchBox/page";
 import Link from "next/link";
 
+export const metadata = {
+    title: "All Meals",
+    description: "Here is all meals of our website."
+}
+
 const Meals = async(props) => {
     const searchParams = await props?.searchParams;
     // console.log("Search params:", searchParams.search);
@@ -9,8 +14,8 @@ const Meals = async(props) => {
         try{
             const res = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchParams.search}`);
             const data = await res.json();
-            console.log(data);
-            return data.meals;
+            // console.log(data);
+            return data.meals || [];
         }catch(err){
             console.error(err);
             return [];

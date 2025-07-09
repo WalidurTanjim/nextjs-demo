@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+export const metadata = {
+    title: "All Posts",
+    description: "Here is all posts of out website"
+}
+
 export const getPosts = async() => {
     const url = 'https://jsonplaceholder.typicode.com/posts';
     try{

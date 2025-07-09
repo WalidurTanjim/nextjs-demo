@@ -3,10 +3,14 @@ import { Roboto, Work_Sans } from "next/font/google";
 
 export const metadata = {
     title: {
-        default: "Next Demo | Learn NextJS",
+        default: "Next Demo",
         template: "%s | Next Demo"
     },
     descrition: "It's a demo website build using NextJS for learning.",
+    authors: [
+        {name: "Walidur Tanjim"},
+        {name: "MD WALIDUR RAHMAN TANJIM", url: "https://www.honeygain.com"}
+    ],
     keywords: ['React', 'Next.js', 'Web Development', 'MERN Stack', 'Full Stack'],
     icons: {
         icon: '/logo.webp'
