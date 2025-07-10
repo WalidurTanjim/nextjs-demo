@@ -1,3 +1,4 @@
+import { redirect } from 'next/navigation';
 import React from 'react';
 
 export const metadata = {
@@ -9,6 +10,10 @@ const Products = async() => {
     const res = await fetch(`http://localhost:3000/api/items`);
     const data = await res.json();
     // console.log(data);
+
+    if(data?.length > 3){
+        redirect('/');
+    }
 
     return (
         <div>
