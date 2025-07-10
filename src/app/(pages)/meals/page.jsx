@@ -1,4 +1,5 @@
 import MealsSearchBox from "@/components/MealsSearchBox/page";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
@@ -36,7 +37,8 @@ const Meals = async(props) => {
                         meals?.map(meal => {
                             return (
                                 <Link key={meal?.idMeal} href={`/meals/${meal?.idMeal}`}>
-                                    <div className="border rounded-md p-2 hover:shadow-md">
+                                    <div className="border border-gray-200 rounded-lg p-2 hover:shadow-md">
+                                        <Image src={meal?.strMealThumb} width={100} height={100} alt={meal?.strMeal} className="w-full h-[225px] rounded-md mb-4" />
                                         <h1>Meal name: {meal?.strMeal}</h1>
                                     </div>
                                 </Link>

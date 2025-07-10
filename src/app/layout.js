@@ -53,7 +53,7 @@ const workSans = Work_Sans({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} ${workSans.variable}`}>{children}</body>
+      <body className={`${roboto.variable} ${workSans.variable} antialiased`}>{children}</body>
     </html>
   )
 }
