@@ -1,9 +1,12 @@
 "use client"
 
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 const AddProductForm = () => {
     const [loading, setLoading] = useState(false);
+
+    const router = useRouter();
 
     const handleSubmit = async e => {
         e.preventDefault();
@@ -26,6 +29,7 @@ const AddProductForm = () => {
         if(result?.insertedId){
             setLoading(false);
             form.reset();
+            router.push("/products");
         }
     }
 
