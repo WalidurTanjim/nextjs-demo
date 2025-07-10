@@ -1,0 +1,44 @@
+[
+    {
+        "username": "MD WALIDUR RAHMAN TANJIM",
+        "email": "mdwalidurrahmantanjim@gmail.com",
+        "role": "user",
+        "badge": "silver",
+        "createdAt": "22-10-2024"
+    },
+    {
+        "username": "MD WALIDUR",
+        "email": "mdwalidur@gmail.com",
+        "role": "user",
+        "badge": "silver",
+        "createdAt": "22-10-2024"
+    },
+    {
+        "username": "MD WALIDUR RAHMAN",
+        "email": "mdwalidurrahman@gmail.com",
+        "role": "user",
+        "badge": "silver",
+        "createdAt": "22-10-2024"
+    },
+    {
+        "username": "WALIDUR RAHMAN TANJIM",
+        "email": "walidurrahmantanjim@gmail.com",
+        "role": "user",
+        "badge": "silver",
+        "createdAt": "22-10-2024"
+    },
+    {
+        "username": "WALIDUR TANJIM",
+        "email": "walidurtanjim@gmail.com",
+        "role": "user",
+        "badge": "silver",
+        "createdAt": "22-10-2024"
+    },
+    {
+        "username": "MD WALID",
+        "email": "mdwalid@gmail.com",
+        "role": "user",
+        "badge": "silver",
+        "createdAt": "22-10-2024"
+    }
+]
