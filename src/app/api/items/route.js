@@ -1,7 +1,7 @@
 import dbConnect from "@/lib/dbConnect";
 
 export async function GET() {
-    const data = await dbConnect('users').find({}).toArray();
+    const data = await dbConnect('products').find({}).toArray();
 
     return Response.json(data)
 }
@@ -10,7 +10,7 @@ export async function POST(req) {
     const postedData = await req.json();
     // console.log("Posted data:", postedData);
 
-    const result = await dbConnect('users').insertOne(postedData);
+    const result = await dbConnect('products').insertOne(postedData);
 
     return Response.json(result)
 }

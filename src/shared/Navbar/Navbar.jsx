@@ -7,6 +7,8 @@ const navigation = [
     { name: 'About', href: '/about', current: false },
     { name: 'Services', href: '/services', current: false },
     { name: 'Posts', href: '/posts', current: false },
+    { name: 'Products', href: '/products', current: false },
+    { name: 'Add Product', href: '/products/add', current: false },
     { name: 'Meals', href: '/meals', current: false },
     { name: 'Blogs', href: '/blogs', current: false },
     { name: 'ClientComp', href: '/clientcomp', current: false },
